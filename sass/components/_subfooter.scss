@@ -1,0 +1,12 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/colors' as *;
+
+.oben__subfooter {
+    background-color: $c-primary;
+
+    &-flex {
+        display: flex;
+        justify-content: space-between;
+        padding: 1.5rem 0;
+    }
+}

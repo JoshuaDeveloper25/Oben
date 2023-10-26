@@ -1,0 +1,44 @@
+// FOR CSS
+$c-primary: #0092FF;
+$c-primary-dark: #145FCA;
+$c-primary-light: #8CC7FF;
+
+$c-secondary: #3B444D;
+$c-secondary-dark: #292F36;
+$c-secondary-light: #B4BCC3;
+
+$c-neutral-white: #FFFFFF;
+$c-neutral-grey: #9D9D9C;
+$c-neutral-black: #000000;
+
+$c-neutral-50-white: #FAFAFA;
+
+$c-text-primary: #212121;
+$c-text-secondary: #666666;
+$c-text-disable: #9E9E9E;
+
+$c-alert-error: #D32F2F;
+$c-alert-warning: #ED6C02;
+$c-alert-info: #0288D1;
+$c-alert-success: #2E7D32;
+
+// FOR HTML
+.c-primary {
+    color: $c-primary;
+}
+
+.c-secondary {
+    color: $c-secondary;
+}
+
+.c-text-primary {
+    color: $c-text-primary;
+}
+
+.c-text-disable {
+    color: $c-text-disable;
+}
+
+.c-text-secondary {
+    color: $c-text-secondary;
+}

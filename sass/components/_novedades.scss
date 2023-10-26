@@ -1,0 +1,41 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/colors' as *;
+
+// No te pierdas ninguna de nuestras novedades
+.oben__novedades {
+    background-color: $c-neutral-50-white;
+
+    &-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; // self-end
+        padding: 3rem 0;
+        column-gap: 1rem;
+    }
+
+    // p content
+    &-p {
+        flex-basis: 40%;
+    }
+
+    // Email input
+    &-input {
+        display: inline-block;
+        flex-basis: 40%;
+        width: 100%;
+    }
+
+    &-inputEmail {
+        border: none;
+        width: 100%;
+    }
+
+    &-inputEmail:focus {
+        outline: none;
+    }
+
+    // Enviar button
+    &-submit {
+        flex-basis: 15%;
+    }
+}

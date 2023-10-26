@@ -1,0 +1,86 @@
+@use '../abstracts/colors' as *;
+
+@mixin for-size($size) {
+    @if $size ==phone-only {
+
+        // 400px
+        @media (max-width: 25em) {
+            @content;
+        }
+    }
+
+    @else if $size ==tablet-portrait-up {
+
+        // include (tablet-portrait-up) { codigo }
+        // 600px
+        @media (max-width: 37.5em) {
+            @content;
+        }
+    }
+
+    @else if $size ==tablet-medium-up {
+
+        // 700px
+        @media (max-width: 43.75em) {
+            @content;
+        }
+    }
+
+    @else if $size ==tablet-big-up {
+
+        // 800px
+        @media (max-width: 50em) {
+            @content;
+        }
+    }
+
+    @else if $size ==tablet-landscape-up {
+
+        // 900px
+        @media (max-width: 56.25em) {
+            @content;
+        }
+    }
+
+    @else if $size ==desktop-up {
+
+        // 1200px
+        @media (max-width: 75em) {
+            @content;
+        }
+    }
+
+    @else if $size ==medium-desktop-up {
+
+        // 1600px
+        @media (max-width: 100em) {
+            @content;
+        }
+    }
+
+    @else if $size ==big-desktop-up {
+
+        // 1800px
+        @media (max-width: 112.5em) {
+            @content;
+        }
+    }
+
+    @else {
+        @media (max-width: $size) {
+            @content;
+        }
+    }
+}
+
+// FOR TITLES
+@mixin heading-title {
+    &-subheading {
+        text-transform: uppercase;
+        color: $c-text-primary;
+        font-weight: 300;
+    }
+
+    // Optional
+    // &-heading {}
+}

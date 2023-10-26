@@ -1,0 +1,23 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/colors' as *;
+
+.oben__footer {
+    background-color: $c-secondary;
+    color: $c-neutral-white;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    &-linksList,
+    &-lawList {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        row-gap: 2rem;
+    }
+
+    &-links,
+    &-lawLinks {
+        text-decoration: none;
+        color: $c-neutral-white;
+    }
+}

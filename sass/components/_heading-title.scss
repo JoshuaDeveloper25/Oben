@@ -1,0 +1,12 @@
+@use '../abstracts/colors' as *;
+@use '../abstracts/mixins' as *;
+
+.oben__headingTitleStart {
+    text-align: start;
+    @include heading-title;
+}
+
+.oben__headingTitleCenter {
+    text-align: center;
+    @include heading-title;
+}

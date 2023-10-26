@@ -1,0 +1,287 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/colors' as *;
+
+.oben-home {
+
+    // OBEN HOME HEADER
+    &__header {
+        background-image: url(../img/header-bg.jpg);
+        background-position: center center;
+        background-size: cover;
+        min-height: 60rem;
+
+        // CONTENT
+        &-summary {
+            padding: 4rem 1rem;
+        }
+
+        // h1
+        &-title {
+            color: $c-neutral-white;
+            text-align: center;
+        }
+    }
+
+    // OBEN HOME - Tu Puerta hacia la Salud, la Riqueza y la Plenitud - SECTION
+    &__puerta {
+        background: $c-neutral-50-white;
+
+        // Content
+        &-content {
+            line-height: 1.6;
+        }
+
+        // Image background
+        &-image {
+            max-width: 48rem;
+        }
+
+        // Img child background
+        &-img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    // OBEN HOME - Nuestros productos Destacados - SECTION
+    &__productos {
+
+        &-image {
+            max-width: 37rem;
+            margin: 0 auto;
+        }
+
+        &-img {
+            width: 100%;
+            height: 100%;
+        }
+
+        &-content {
+            background: $c-secondary;
+            color: $c-neutral-white;
+            padding: 1.7rem;
+        }
+
+        &-contentHeading {
+            font-size: 3.2rem;
+        }
+    }
+
+    // OBEN HOME - Descubre las últimas novedades de nuestro blog - SECTION
+    &__novedades-blog {
+        background: $c-neutral-50-white;
+
+        &-image {
+            max-width: 40rem;
+            margin: 0 auto;
+        }
+
+        &-img {
+            width: 100%;
+            height: 100%;
+        }
+
+        &-content {
+            box-shadow: 0px 0px 20px -2px rgba(59, 68, 77, 0.20);
+            background: $c-neutral-white;
+            padding: 1.7rem;
+        }
+
+        &-contentHeading {
+            font-size: 2.4rem;
+        }
+    }
+
+    // OBEN HOME - Suscribete a nuestra newsletter - SECTION
+    &__suscribeteNewsletter {
+        background-image: url(../img/flechas-newsletter.jpg);
+        padding: 8rem;
+
+        @include for-size('tablet-medium-up') {
+            padding: 4rem 2rem;
+        }
+
+        &-bg {
+            background-color: $c-neutral-white;
+            border-radius: 0.5rem;
+            box-shadow: .4rem .4rem 1.6rem 0 rgba($c-neutral-black, 0.10);
+            padding: 5rem 2.5rem;
+        }
+
+        &-suscription {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            column-gap: 2rem;
+
+            // 485px
+            @include for-size(30.3125em) {
+                flex-direction: column;
+                align-items: start;
+                row-gap: 1.8rem;
+            }
+        }
+
+        &-input {
+            flex-basis: 75%;
+
+            // 485px
+            @include for-size(30.3125em) {
+                display: inline-block;
+                width: 100%;
+            }
+        }
+
+        &-inputEmail {
+            border: none;
+            width: 100%;
+        }
+
+        &-inputEmail:focus {
+            outline: none;
+        }
+
+        &-submit {
+            flex-basis: 20%;
+        }
+    }
+
+    // OBEN HOME - Síguenos en nuestras redes sociales - SECTION
+    &__redesSociales {
+
+        // Content
+        &-content {
+            line-height: 1.6;
+        }
+
+        // Boxes flex
+        &-grid {
+
+            // 445px
+            @include for-size(27.8125em) {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        // Box width
+        &-box {
+            max-width: 17rem;
+        }
+
+        // Img 
+        &-img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    // OBEN HOME - Historias de transformación con OBEN - SECTION
+    &__historias {
+        background-color: $c-neutral-50-white;
+
+        &-summaryContent {
+            max-width: 70rem;
+            margin: 2.5rem auto 0 auto;
+            color: $c-text-primary;
+        }
+
+        // CAROUSEL CONTAINER
+        &-reviews {
+            padding: 0 5rem;
+        }
+
+        // CAROUSEL CARD
+        &-review {
+            border-radius: 0.125rem;
+            border: 1px solid $c-primary;
+            background: $c-neutral-white;
+            padding: 1.8rem;
+        }
+    }
+
+    // OBEN HOME - Tu oportunidad para el Éxito - SECTION
+    &__oportunidad {
+
+        // Content
+        &-content {
+            line-height: 1.6;
+            padding-right: 5rem;
+        }
+
+        // Image background
+        &-image {
+            max-width: 48rem;
+        }
+
+        // Img child background
+        &-img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+/* CAROUSEL ARROWS STYLING */
+.oben-home__historias-reviews .priv_arrow,
+.oben-home__historias-reviews .next_arrow {
+    position: absolute;
+    background: rgba(0, 146, 255, 0.20) !important;
+    display: inline-block !important;
+    text-align: center;
+    line-height: 5rem;
+    cursor: pointer;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    z-index: 200;
+}
+
+.oben-home__historias-reviews .slick-prev,
+.oben-home__historias-reviews .slick-next {
+    position: absolute !important;
+    z-index: 1000 !important;
+    border-radius: 50% !important;
+    background: $c-neutral-white !important;
+    width: 5.5rem !important;
+    height: 5.5rem !important;
+}
+
+.oben-home__historias-reviews .priv_arrow {
+    left: 0 !important;
+    top: 25% !important;
+}
+
+.oben-home__historias-reviews .next_arrow {
+    right: 0 !important;
+    top: 25% !important;
+}
+
+// Productos destacados carousel
+.slick-slide {
+    padding: 0 1rem !important;
+}
+
+.slick-dots {
+    display: flex !important;
+    justify-content: center !important;
+    list-style: none !important;
+}
+
+.slick-dots li {
+    display: inline-block !important;
+    margin: 2.5rem 1rem !important;
+}
+
+.slick-dots li button {
+    font-size: 0 !important;
+    height: 1rem !important;
+    width: 1rem !important;
+    background: rgba(0, 146, 255, 0.20) !important;
+    border-radius: 50% !important;
+    border: none !important;
+}
+
+.slick-dots .slick-active button {
+    background: $c-primary !important;
+}

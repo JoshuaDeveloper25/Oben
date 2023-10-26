@@ -1,0 +1,86 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/colors' as *;
+
+// LIVE OBEN LOGO AND OBEN MENU SECTION
+.oben__menu {
+    padding: 2rem 0;
+
+    &-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 2rem;
+
+        // 946px
+        @include for-size(59.125em) {
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: start;
+        }
+
+        // // 450px
+        // @include for-size(28.125em) {
+        //     flex-direction: column;
+        // }
+    }
+
+    // div
+    &-logo {
+        max-width: 28.5rem;
+
+        // 946px
+        @include for-size(59.125em) {
+            max-width: 23rem;
+        }
+    }
+
+    // img(logo)
+    &-logoImg {
+        width: 100%;
+        height: 100%;
+    }
+
+    // Menu in normal width
+    &-linksListNormalMedia {
+
+        // 946px
+        @include for-size(59.125em) {
+            display: none;
+        }
+    }
+
+    // Menu in small or medium UIs
+    &-linksListMediumMedia {
+        display: none;
+
+        // 946px
+        @include for-size(59.125em) {
+            display: block;
+        }
+    }
+
+    // ul
+    &-linksList {
+        display: flex;
+        list-style: none;
+        column-gap: 4.5rem;
+        padding: 2rem 0;
+
+        // 1090px
+        @include for-size(68.125em) {
+            column-gap: 2.5rem;
+        }
+
+        // 946px
+        @include for-size(59.125em) {
+            flex-direction: column;
+            row-gap: 3.5rem;
+        }
+    }
+
+    // a
+    &-links {
+        text-decoration: none;
+        color: $c-text-primary;
+    }
+}

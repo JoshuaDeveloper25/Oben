@@ -1,0 +1,173 @@
+@use '../abstracts/colors' as *;
+@use '../abstracts/mixins' as *;
+
+// Container
+.container-large {
+    max-width: 120rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+// Active page links
+.active-page {
+    font-weight: bolder;
+    color: $c-secondary;
+    padding: 1rem 3.5rem;
+    border-bottom: 2px solid $c-primary;
+
+    // 946px
+    @include for-size(59.125em) {
+        padding: 0 1rem 1rem 0;
+    }
+}
+
+// Border bottoms from titles
+.border-primary-bottom {
+    display: inline-block;
+    background: $c-primary;
+    height: .6rem;
+    width: 13.3rem;
+}
+
+// Buttons
+.button {
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 0.375rem;
+    padding: .5rem 6rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    border: none;
+}
+
+.button-primary-blue {
+    background: $c-primary;
+    color: $c-neutral-white;
+}
+
+// Common alignment (X axis and Y axis)
+.x-y-alignment-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Border radius
+.border-radius-0-5 {
+    border-radius: 0.5rem;
+}
+
+// Borders
+.border-right-white {
+    border-right: .1rem solid $c-neutral-white;
+
+    // 768px
+    @include for-size(48em) {
+        border-bottom: .1rem solid $c-neutral-white;
+        padding-bottom: 2rem;
+        border-right: 0;
+    }
+}
+
+// MARGINS AND PADDINGS
+// MARGIN TOP
+.mt-8 {
+    margin-top: 8rem;
+}
+
+.mt-7-5 {
+    margin-top: 7.5rem;
+}
+
+.mt-7 {
+    margin-top: 7rem;
+}
+
+.mt-6-5 {
+    margin-top: 6.5rem;
+}
+
+.mt-6 {
+    margin-top: 6rem;
+}
+
+.mt-5-5 {
+    margin-top: 5.5rem;
+}
+
+// MARGIN BOTTOM
+.mb-8 {
+    margin-bottom: 8rem;
+}
+
+.mb-7-5 {
+    margin-bottom: 7.5rem;
+}
+
+.mb-7 {
+    margin-bottom: 7rem;
+}
+
+.mb-6-5 {
+    margin-bottom: 6.5rem;
+}
+
+.mb-6 {
+    margin-bottom: 6rem;
+}
+
+.mb-5-5 {
+    margin-bottom: 5.5rem;
+}
+
+// PADDING TOP
+.pt-8 {
+    margin-top: 8rem;
+}
+
+.pt-7-5 {
+    padding-top: 7.5rem;
+}
+
+.pt-7 {
+    padding-top: 7rem;
+}
+
+.pt-6-5 {
+    padding-top: 6.5rem;
+}
+
+.pt-6 {
+    padding-top: 6rem;
+}
+
+.pt-5-5 {
+    padding-top: 5.5rem;
+}
+
+// PADDING BOTTOM
+.pb-8 {
+    padding-bottom: 8rem;
+}
+
+.pb-7-5 {
+    padding-bottom: 7.5rem;
+}
+
+.pb-7 {
+    padding-bottom: 7rem;
+}
+
+.pb-6-5 {
+    padding-bottom: 6.5rem;
+}
+
+.pb-6 {
+    padding-bottom: 6rem;
+}
+
+.pb-5-5 {
+    padding-bottom: 5.5rem;
+}
