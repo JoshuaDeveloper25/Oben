@@ -1,0 +1,81 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/colors' as *;
+
+.oben-vision {
+    // OBEN HEADER VISION
+    &__header {
+        background-image: url(../img/vision-bg.jpg);
+        background-position: center center;
+        background-size: cover;
+        min-height: 50rem;
+
+        // CONTENT
+        &-summary {
+            padding: 4rem 1rem;
+        }
+
+        // h1
+        &-title {
+            color: $c-neutral-white;
+            text-align: center;
+        }
+    }
+
+    // OBEN HOME - Encuentra la armonía en todos los ámbitos de tu vida - SECTION
+    &__armonia {
+        background: $c-neutral-50-white;
+
+        // Content
+        &-content {
+            line-height: 1.6;
+        }
+
+        // Image background
+        &-image {
+            max-width: 48rem;
+        }
+
+        // Img child background
+        &-img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    // OBEN HOME - La visión de OBEN - SECTION
+    &__visionOben {
+        background-image: url(../img/flechas-newsletter.jpg);
+        padding: 8rem;
+
+        @include for-size('tablet-medium-up') {
+            padding: 4rem 2rem;
+        }
+
+        &-bg {
+            background-color: $c-neutral-white;
+            border-radius: 0.5rem;
+            box-shadow: .4rem .4rem 1.6rem 0 rgba($c-neutral-black, 0.10);
+            padding: 5rem 2.5rem;
+        }
+
+        &-letter {
+            position: relative;
+            max-width: 80rem;
+            margin: 0 auto;
+        }
+
+        &-letterBorders {
+            position: absolute;
+            z-index: -1;
+            inset: -2rem;
+            isolation: isolate;
+        }
+        
+        &-letterSummary {
+            background: red;
+
+            padding: 1.5rem 2rem;
+            text-align: center;
+        }
+    }
+}

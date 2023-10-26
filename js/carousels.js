@@ -42,6 +42,7 @@ $(document).ready(function () {
     arrows: true,
     speed: 250,
     slidesToShow: 2,
+    autoplay: true,
     slidesToScroll: 1,
     prevArrow:
       '<span class="priv_arrow"><img src="img/reviews-left-icon.svg" alt=""></span>',
@@ -65,6 +66,7 @@ $(document).ready(function () {
           slidesToScroll: 1,
           dots: true,
           arrows: false,
+          autoplay: true,
         },
       },
     ],
