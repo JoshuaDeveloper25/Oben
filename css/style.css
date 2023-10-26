@@ -7,6 +7,14 @@
   color: #3B444D;
 }
 
+.c-neutral-white {
+  color: #FFFFFF;
+}
+
+.c-neutral-white-50 {
+  color: #FFFFFF;
+}
+
 .c-text-primary {
   color: #212121;
 }
@@ -666,7 +674,7 @@ body {
   height: 100%;
 }
 .oben-vision__visionOben {
-  background-image: url(../img/flechas-newsletter.jpg);
+  background-image: url(../img/flechas-vision.jpg);
   padding: 8rem;
 }
 @media (max-width: 43.75em) {
@@ -684,17 +692,50 @@ body {
   position: relative;
   max-width: 80rem;
   margin: 0 auto;
+  isolation: isolate;
+  padding: 2rem;
 }
-.oben-vision__visionOben-letterBorders {
+.oben-vision__visionOben-letterBg {
   position: absolute;
   z-index: -1;
-  inset: -2rem;
-  isolation: isolate;
+  inset: 0;
+  background: rgba(0, 146, 255, 0.1);
+}
+.oben-vision__visionOben-letterBorders {
+  height: 100%;
+  width: 100%;
 }
 .oben-vision__visionOben-letterSummary {
-  background: red;
   padding: 1.5rem 2rem;
   text-align: center;
+}
+.oben-vision__cumplimiento {
+  background-color: #FAFAFA;
+}
+.oben-vision__cumplimiento-summaryContent {
+  margin: 3.5rem auto 0 auto;
+  color: #212121;
+  line-height: 1.7;
+}
+.oben-vision__impacto-content {
+  line-height: 1.6;
+  padding-right: 5rem;
+}
+.oben-vision__impacto-image {
+  max-width: 48rem;
+}
+.oben-vision__impacto-img {
+  width: 100%;
+  height: 100%;
+}
+.oben-vision__parte {
+  background-color: #4A5762;
+}
+.oben-vision__parte-summaryContent {
+  max-width: 75rem;
+  margin: 3.5rem auto 0 auto;
+  line-height: 1.7;
+  color: #FFFFFF;
 }
 
 /*# sourceMappingURL=style.css.map */

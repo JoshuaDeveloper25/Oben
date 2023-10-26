@@ -4,6 +4,7 @@ $c-primary-dark: #145FCA;
 $c-primary-light: #8CC7FF;
 
 $c-secondary: #3B444D;
+$c-secondary-2: #4A5762;
 $c-secondary-dark: #292F36;
 $c-secondary-light: #B4BCC3;
 
@@ -29,6 +30,14 @@ $c-alert-success: #2E7D32;
 
 .c-secondary {
     color: $c-secondary;
+}
+
+.c-neutral-white {
+    color: $c-neutral-white;
+}
+
+.c-neutral-white-50 {
+    color: $c-neutral-white;
 }
 
 .c-text-primary {

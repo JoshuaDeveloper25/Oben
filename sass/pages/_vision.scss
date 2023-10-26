@@ -2,6 +2,7 @@
 @use '../abstracts/colors' as *;
 
 .oben-vision {
+
     // OBEN HEADER VISION
     &__header {
         background-image: url(../img/vision-bg.jpg);
@@ -21,7 +22,7 @@
         }
     }
 
-    // OBEN HOME - Encuentra la armonía en todos los ámbitos de tu vida - SECTION
+    // OBEN VISION - Encuentra la armonía en todos los ámbitos de tu vida - SECTION
     &__armonia {
         background: $c-neutral-50-white;
 
@@ -42,9 +43,9 @@
         }
     }
 
-    // OBEN HOME - La visión de OBEN - SECTION
+    // OBEN VISION - La visión de OBEN - SECTION
     &__visionOben {
-        background-image: url(../img/flechas-newsletter.jpg);
+        background-image: url(../img/flechas-vision.jpg);
         padding: 8rem;
 
         @include for-size('tablet-medium-up') {
@@ -62,20 +63,69 @@
             position: relative;
             max-width: 80rem;
             margin: 0 auto;
+            isolation: isolate;
+            padding: 2rem;
+        }
+
+        &-letterBg {
+            position: absolute;
+            z-index: -1;
+            inset: 0;
+            background: rgba($c-primary, 0.10);
         }
 
         &-letterBorders {
-            position: absolute;
-            z-index: -1;
-            inset: -2rem;
-            isolation: isolate;
+            height: 100%;
+            width: 100%;
         }
-        
-        &-letterSummary {
-            background: red;
 
+        &-letterSummary {
             padding: 1.5rem 2rem;
             text-align: center;
+        }
+    }
+
+    // OBEN VISION - Cómo Cumplimos Nuestra Visión - SECTION
+    &__cumplimiento {
+        background-color: $c-neutral-50-white;
+
+        &-summaryContent {
+            margin: 3.5rem auto 0 auto;
+            color: $c-text-primary;
+            line-height: 1.7;
+        }
+    }
+
+    // OBEN VISION - Un impacto a nivel global - SECTION
+    &__impacto {
+
+        // Content
+        &-content {
+            line-height: 1.6;
+            padding-right: 5rem;
+        }
+
+        // Image background
+        &-image {
+            max-width: 48rem;
+        }
+
+        // Img child background
+        &-img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    // OBEN VISION - Tu también puedes ser parte de OBEN - SECTION
+    &__parte {
+        background-color: $c-secondary-2;
+
+        &-summaryContent {
+            max-width: 75rem;
+            margin: 3.5rem auto 0 auto;
+            line-height: 1.7;
+            color: $c-neutral-white;
         }
     }
 }
