@@ -1,0 +1,24 @@
+@use '../abstracts/colors' as *;
+@use '../abstracts/mixins' as *;
+
+.oben-oportunidad {
+
+    // OBEN HEADER OPORTUNIDAD
+    &__header {
+        background-image: url(../img/oportunidad-bg.jpg);
+        background-position: center center;
+        background-size: cover;
+        min-height: 50rem;
+
+        // CONTENT
+        &-summary {
+            padding: 4rem 1rem;
+        }
+
+        // h1
+        &-title {
+            color: $c-neutral-white;
+            text-align: center;
+        }
+    }
+}
