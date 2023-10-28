@@ -3,42 +3,42 @@
 
 // OBEN SUBMENU SECTION
 .oben__submenu {
-        background: $c-secondary;
-        color: $c-neutral-white;
+    background: $c-secondary;
+    color: $c-neutral-white;
 
-        &-flex {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+    &-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-            // 350px
-            @include for-size(21.875em) {
-                flex-direction: column;
-                padding: 1rem 0;
-                row-gap: 2rem;
-            }
+        // 350px
+        @include for-size(21.875em) {
+            flex-direction: column;
+            padding: 1rem 0;
+            row-gap: 2rem;
         }
+    }
 
-        // ul
-        &-iconsList {
-            display: flex;
-            gap: 1.5rem;
-            list-style: none;
+    // ul
+    &-iconsList {
+        display: flex;
+        gap: 1.5rem;
+        list-style: none;
 
-            // 190px
-            @include for-size(11.875em) {
-                flex-direction: column;
-            }
+        // 190px
+        @include for-size(11.875em) {
+            flex-direction: column;
         }
+    }
 
-        // li
-        &-iconList {
-            background: rgba($c-neutral-white, 0.10);
-        }
+    // li
+    &-iconList {
+        background: rgba($c-neutral-white, 0.10);
+    }
 
-        // img(icons)
-        &-iconsImg {
-            height: 4rem;
-            padding: 1rem;
-        }
+    // img(icons)
+    &-iconsImg {
+        height: 4rem;
+        padding: 1rem;
+    }
 }

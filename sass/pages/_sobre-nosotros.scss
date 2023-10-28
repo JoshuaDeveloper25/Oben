@@ -1,0 +1,111 @@
+@use '../abstracts/colors' as *;
+@use '../abstracts/mixins' as *;
+
+.oben-nosotros {
+
+    // OBEN HEADER NOSOTROS
+    &__header {
+        background-image: url(../img/sobre-nosotros-bg.jpg);
+        background-position: center center;
+        background-size: cover;
+        min-height: 50rem;
+
+        // CONTENT
+        &-summary {
+            padding: 4rem 1rem;
+        }
+
+        // h1
+        &-title {
+            color: $c-neutral-white;
+            text-align: center;
+        }
+    }
+
+    // OBEN NOSOTROS - Tu también puedes ser parte de OBEN - SECTION
+    &__equipo {
+
+        &-summaryContent {
+            max-width: 75rem;
+            margin: 3.5rem auto 0 auto;
+            line-height: 1.7;
+        }
+
+        &-card {
+            max-width: 35rem;
+
+        }
+
+        &-image {
+            max-width: 100%;
+        }
+
+        &-img {
+            width: 100%;
+            height: 100%;
+        }
+
+        &-content {
+            background-color: $c-secondary;
+            color: $c-neutral-white;
+            padding: 1.5rem;
+        }
+
+        &-nombre {
+            font-size: 2.4rem;
+        }
+    }
+
+    // OBEN NOSOTROS - Nuestro viaje transformador - SECTION
+    &__viaje {
+        background-image: url(../img/flechas-viaje.jpg);
+        background-position: center center;
+        background-size: cover;
+        padding: 8rem;
+
+        @include for-size('tablet-medium-up') {
+            padding: 4rem 2rem;
+        }
+
+        &-bg {
+            background-color: $c-neutral-white;
+            border-radius: 0.5rem;
+            box-shadow: .4rem .4rem 1.6rem 0 rgba($c-neutral-black, 0.10);
+            padding: 3rem 2.5rem;
+        }
+
+        &-history {
+            text-align: center;
+            max-width: 90rem;
+            line-height: 1.8;
+            margin: 0 auto;
+        }
+    }
+
+    // OBEN NOSOTROS - Nuestra filosofia y el futuro de OBEN - SECTION
+    &__filosofia {
+
+        &-box {
+            background-position: center top;
+            background-size: cover;
+            color: $c-neutral-white;
+            line-height: 1.8;
+        }
+
+        &-boxImage1 {
+            background-image: url(../img/filosofia.jpg);
+        }
+
+        &-boxImage2 {
+            background-image: url(../img/futuro.jpg);
+        }
+
+        &-boxTitle {
+            font-size: 3.2rem;
+        }
+
+        &-boxText {
+            max-width: 45rem;
+        }
+    }
+}

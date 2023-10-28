@@ -1,0 +1,89 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/colors' as *;
+
+.oben-newsletter {
+
+    // OBEN HEADER NEWSLETTER
+    &__header {
+        background-image: url(../img/newsletter-bg.jpg);
+        background-position: center center;
+        background-size: cover;
+        min-height: 50rem;
+
+        // CONTENT
+        &-summary {
+            padding: 4rem 1rem;
+        }
+
+        // h1
+        &-title {
+            color: $c-neutral-white;
+            text-align: center;
+        }
+    }
+
+    // OBEN NEWSLETTER - Consejos y novedades que no encontrarás en otra parte - SECTION
+    &__consejos {
+        background: url(../img/newsletter-bg-grey-arrows.jpg);
+        background-position: center center;
+        background-size: cover;
+
+        &-logContent {
+            background: $c-primary;
+            padding: 3.1rem;
+        }
+
+        &-bg {
+            background: $c-neutral-white;
+            box-shadow: 2.1rem -1.3rem 6.5rem 0 rgba($c-neutral-black, 0.1);
+        }
+
+        &-input {
+            margin: 3.8rem 0;
+        }
+
+        &-inputContent {
+            padding: 3.1rem;
+        }
+
+        &-inputEmail {
+            border: none;
+            width: 100%;
+        }
+
+        &-inputEmail:focus {
+            outline: none;
+        }
+
+        &-note {
+            box-shadow: 0px 0px 20px 0px rgba($c-neutral-black, 0.15);
+            background: $c-neutral-white;
+            border-radius: 0.375rem;
+            text-align: center;
+            padding: 1.5rem;
+        }
+    }
+
+    // OBEN NEWSLETTER - ¿Qué es lo que encontrarás en nuestra newsletter? - SECTION
+    &__curiosidad {
+        background: $c-primary-lighter;
+        padding: 6.2rem;
+
+        @include for-size('tablet-medium-up') {
+            padding: 4rem 2rem;
+        }
+
+        &-contentList {
+            background: $c-neutral-white;
+        }
+
+        &-image {
+            max-width: 100%;
+        }
+
+        &-img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

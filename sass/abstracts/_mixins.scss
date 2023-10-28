@@ -82,5 +82,9 @@
     }
 
     // Optional
-    // &-heading {}
+    &-heading {
+        @include for-size(31.25em) {
+            font-size: 3rem;
+        }
+    }
 }

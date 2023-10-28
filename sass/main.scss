@@ -9,6 +9,10 @@
 @use './components/subfooter';
 @use './components/submenu';
 
+@use './pages/blog';
+@use './pages/contactanos';
 @use './pages/home';
+@use './pages/newsletter';
 @use './pages/oficina-virtual';
+@use './pages/sobre-nosotros';
 @use './pages/vision';

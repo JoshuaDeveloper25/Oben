@@ -1,0 +1,74 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/colors' as *;
+
+.oben-contactanos {
+
+    // OBEN HEADER CONTACTANOS
+    &__header {
+        background-image: url(../img/contactanos-bg.jpg);
+        background-position: center center;
+        background-size: cover;
+        min-height: 50rem;
+
+        // CONTENT
+        &-summary {
+            padding: 4rem 1rem;
+        }
+
+        // h1
+        &-title {
+            color: $c-neutral-white;
+            text-align: center;
+        }
+    }
+
+    // OBEN CONTACTANOS - Estamos encantados de escucharte - SECTION
+    &__encantado {
+        &-logContent {
+            background: $c-primary-lighter;
+            padding: 3.1rem;
+            line-height: 1.8;
+        }
+
+        &-bg {
+            box-shadow: 2.1rem -1.3rem 6.5rem 0 rgba($c-neutral-black, 0.1);
+            background: $c-neutral-white;
+        }
+
+        &-input {
+            margin: 2rem 0;
+        }
+
+        &-inputContent {
+            padding: 3.1rem;
+        }
+
+        &-inputInfo {
+            border: none;
+            width: 100%;
+            color: $c-text-disable;
+        }
+
+        &-inputInfo:focus {
+            outline: none;
+            color: $c-neutral-black;
+        }
+
+        &-inputTextarea {
+            height: 15rem;
+        }
+    }
+
+    // OBEN CONTACTANOS - Europa | Estados Unidos - SECTION
+    &__alternativas {
+
+        &-box {
+            background: $c-primary-dark;
+            padding: 1.5rem 2.5rem;
+        }
+
+        &-boxTitle {
+            font-size: 3.2rem;
+        }
+    }
+}
