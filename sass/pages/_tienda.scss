@@ -21,4 +21,119 @@
             text-align: center;
         }
     }
+
+    // OBEN TIENDA - Tu Destino para una Vida plena: Descubre nuestros productos - SECTION
+    &__productosTienda {
+
+        &-card {
+
+            // 992px
+            @include for-size(62em) {
+                max-width: 40rem;
+            }
+        }
+
+        &-image {
+            max-width: 40rem;
+            margin: 0 auto;
+        }
+
+        &-img {
+            width: 100%;
+            height: 100%;
+        }
+
+        &-content {
+            background: $c-secondary;
+            color: $c-neutral-white;
+            padding: 1.7rem;
+        }
+
+        &-contentHeading,
+        &-contentPrice {
+            font-size: 3.2rem;
+        }
+    }
+
+    // OBEN TIENDA - ¿Por qué elegir OBEN? - SECTION
+    &__porque {
+
+        // LEFT CONTENT
+        &-leftboxContent {
+            box-shadow: 0 0 2rem -.2rem rgba($c-text-primary, 0.20);
+            padding: 3.1rem;
+        }
+
+        &-leftboxContent {
+            background: $c-primary-lighter;
+        }
+
+        &-leftContentSubtitle {
+            font-size: 3.2rem;
+        }
+
+        // CENTER IMAGE
+        &-image {
+            width: 100%;
+
+            @include for-size(62em) {
+                max-width: 25rem;
+            }
+        }
+
+        &-img {
+            width: 100%;
+            height: 100%;
+        }
+
+        // RIGHT CONTENT
+        &-rightboxContent {
+            box-shadow: 0 0 2rem -.2rem rgba($c-text-primary, 0.20);
+            background: $c-neutral-50-white;
+            padding: 3.1rem;
+        }
+
+        &-rightContent {
+            box-shadow: 0 0 2rem -.2rem rgba($c-text-primary, 0.20);
+            background: $c-neutral-50-white;
+            padding: 1.5rem;
+        }
+    }
+
+    // OBEN TIENDA - Envíos gratis - SECTION
+    &__envio {
+        background: url(../img/flechas-envios.jpg);
+        padding: 6.2rem;
+
+        @include for-size('tablet-medium-up') {
+            padding: 3rem 1rem;
+        }
+
+        &-contentList {
+            background: $c-neutral-white;
+        }
+
+        &-contentListP {
+            font-size: 2.1rem;
+        }
+
+        &-image {
+            max-width: 100%;
+        }
+
+        &-img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    // OBEN TIENDA - Tienes alguna duda? - SECTION
+    &__duda {
+
+        &-summaryContent {
+            max-width: 75rem;
+            margin: 3.5rem auto 0 auto;
+            line-height: 1.7;
+        }
+    }
 }

@@ -990,6 +990,86 @@ body {
   color: #FFFFFF;
   text-align: center;
 }
+@media (max-width: 62em) {
+  .oben-tienda__productosTienda-card {
+    max-width: 40rem;
+  }
+}
+.oben-tienda__productosTienda-image {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+.oben-tienda__productosTienda-img {
+  width: 100%;
+  height: 100%;
+}
+.oben-tienda__productosTienda-content {
+  background: #3B444D;
+  color: #FFFFFF;
+  padding: 1.7rem;
+}
+.oben-tienda__productosTienda-contentHeading, .oben-tienda__productosTienda-contentPrice {
+  font-size: 3.2rem;
+}
+.oben-tienda__porque-leftboxContent {
+  box-shadow: 0 0 2rem -0.2rem rgba(33, 33, 33, 0.2);
+  padding: 3.1rem;
+}
+.oben-tienda__porque-leftboxContent {
+  background: #E2F1FF;
+}
+.oben-tienda__porque-leftContentSubtitle {
+  font-size: 3.2rem;
+}
+.oben-tienda__porque-image {
+  width: 100%;
+}
+@media (max-width: 62em) {
+  .oben-tienda__porque-image {
+    max-width: 25rem;
+  }
+}
+.oben-tienda__porque-img {
+  width: 100%;
+  height: 100%;
+}
+.oben-tienda__porque-rightboxContent {
+  box-shadow: 0 0 2rem -0.2rem rgba(33, 33, 33, 0.2);
+  background: #FAFAFA;
+  padding: 3.1rem;
+}
+.oben-tienda__porque-rightContent {
+  box-shadow: 0 0 2rem -0.2rem rgba(33, 33, 33, 0.2);
+  background: #FAFAFA;
+  padding: 1.5rem;
+}
+.oben-tienda__envio {
+  background: url(../img/flechas-envios.jpg);
+  padding: 6.2rem;
+}
+@media (max-width: 43.75em) {
+  .oben-tienda__envio {
+    padding: 3rem 1rem;
+  }
+}
+.oben-tienda__envio-contentList {
+  background: #FFFFFF;
+}
+.oben-tienda__envio-contentListP {
+  font-size: 2.1rem;
+}
+.oben-tienda__envio-image {
+  max-width: 100%;
+}
+.oben-tienda__envio-img {
+  width: 100%;
+  height: 100%;
+}
+.oben-tienda__duda-summaryContent {
+  max-width: 75rem;
+  margin: 3.5rem auto 0 auto;
+  line-height: 1.7;
+}
 
 .oben-vision__header {
   background-image: url(../img/vision-bg.jpg);
