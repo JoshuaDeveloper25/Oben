@@ -898,6 +898,139 @@ body {
   color: #FFFFFF;
   text-align: center;
 }
+.oben-oportunidad__duda-summaryContent {
+  max-width: 75rem;
+  margin: 3.5rem auto 0 auto;
+  line-height: 1.7;
+}
+.oben-oportunidad__guia-box {
+  position: absolute;
+  width: 38rem;
+  bottom: -6.5rem;
+  left: 15%;
+  background: #FAFAFA;
+  box-shadow: 0.4rem 0.4rem 1.8rem 0.6rem rgba(0, 0, 0, 0.05);
+  padding: 3rem;
+}
+@media (max-width: 48em) {
+  .oben-oportunidad__guia-box {
+    position: unset;
+    max-width: 100%;
+  }
+}
+.oben-oportunidad__guia-title {
+  font-size: 2.3rem;
+}
+.oben-oportunidad__guia-subtitle {
+  font-size: 2.3rem;
+}
+.oben-oportunidad__guia-image {
+  max-width: 75rem;
+}
+.oben-oportunidad__guia-img {
+  width: 100%;
+  height: 100%;
+}
+.oben-oportunidad__facetas {
+  background: #FAFAFA;
+}
+.oben-oportunidad__facetas-content {
+  line-height: 1.6;
+}
+.oben-oportunidad__facetas-image {
+  max-width: 48rem;
+}
+.oben-oportunidad__facetas-img {
+  width: 100%;
+  height: 100%;
+}
+.oben-oportunidad__version-box {
+  position: absolute;
+  width: 38rem;
+  bottom: -6.5rem;
+  right: 15%;
+  background: #FAFAFA;
+  box-shadow: 0.4rem 0.4rem 1.8rem 0.6rem rgba(0, 0, 0, 0.05);
+  padding: 3rem;
+}
+@media (max-width: 48em) {
+  .oben-oportunidad__version-box {
+    position: unset;
+    max-width: 100%;
+  }
+}
+.oben-oportunidad__version-title {
+  font-size: 2.3rem;
+}
+.oben-oportunidad__version-subtitle {
+  font-size: 2.3rem;
+}
+.oben-oportunidad__version-image {
+  max-width: 75rem;
+}
+.oben-oportunidad__version-img {
+  width: 100%;
+  height: 100%;
+}
+.oben-oportunidad__recompensa {
+  background-color: #4A5762;
+  padding: 6.2rem;
+}
+@media (max-width: 25em) {
+  .oben-oportunidad__recompensa {
+    padding: 3rem 0.5rem;
+  }
+}
+.oben-oportunidad__recompensa-summaryContent {
+  max-width: 75rem;
+  margin: 3.5rem auto 0 auto;
+  line-height: 1.7;
+  color: #FFFFFF;
+}
+.oben-oportunidad__comunidad {
+  padding: 6.2rem;
+}
+@media (max-width: 43.75em) {
+  .oben-oportunidad__comunidad {
+    padding: 4rem 2rem;
+  }
+}
+.oben-oportunidad__comunidad-contentList {
+  box-shadow: 0.4rem 0.4rem 1.8rem 0.6rem rgba(0, 0, 0, 0.1);
+  background: #FFFFFF;
+  line-height: 1.7;
+}
+.oben-oportunidad__comunidad-image {
+  max-width: 100%;
+  box-shadow: 0.4rem 0.4rem 1.8rem 0.6rem rgba(0, 0, 0, 0.1);
+}
+.oben-oportunidad__comunidad-img {
+  width: 100%;
+  height: 100%;
+}
+.oben-oportunidad__pasos {
+  background-image: url(../img/flechas-pasos.jpg);
+  background-position: center center;
+  background-size: cover;
+  padding: 8rem;
+}
+@media (max-width: 43.75em) {
+  .oben-oportunidad__pasos {
+    padding: 3rem 0;
+  }
+}
+.oben-oportunidad__pasos-bg {
+  background-color: #FFFFFF;
+  border-radius: 0.5rem;
+  box-shadow: 0.4rem 0.4rem 1.6rem 0 rgba(0, 0, 0, 0.1);
+  padding: 3rem 2.5rem;
+}
+.oben-oportunidad__pasos-content {
+  padding: 1.5rem 1rem;
+  background: #E2F1FF;
+  text-align: center;
+  margin: 0 auto;
+}
 
 .oben-nosotros__header {
   background-image: url(../img/sobre-nosotros-bg.jpg);
