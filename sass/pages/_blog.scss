@@ -101,7 +101,7 @@
 
         // 992px
         @include for-size(62em) {
-            padding: 4rem 1rem;
+            padding: 4rem 0;
         }
 
         &-boxImage {

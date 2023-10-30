@@ -41,7 +41,6 @@
             left: 15%;
             background: $c-neutral-50-white;
             box-shadow: .4rem .4rem 1.8rem .6rem rgba($c-neutral-black, 0.05);
-            padding: 3rem;
 
             // 768px
             @include for-size(48em) {
@@ -71,7 +70,12 @@
 
     // OBEN OPORTUNIDAD - Consigue la armonía en todas las facetas de tu vida - SECTION
     &__facetas {
-        background: $c-neutral-50-white;
+        padding: 6rem 0;
+
+        // 768px
+        @include for-size(48em) {
+            padding: 1rem 0;
+        }
 
         // Content
         &-content {
@@ -92,6 +96,13 @@
 
     // OBEN OPORTUNIDAD - ALCANZA TU MEJOR VERSIÓN - SECTION
     &__version {
+        margin-bottom: 15rem;
+
+        // 768px
+        @include for-size(48em) {
+            margin-bottom: 4rem;
+        }
+
         &-box {
             position: absolute;
             width: 38rem;
@@ -99,7 +110,6 @@
             right: 15%;
             background: $c-neutral-50-white;
             box-shadow: .4rem .4rem 1.8rem .6rem rgba($c-neutral-black, 0.05);
-            padding: 3rem;
 
             // 768px
             @include for-size(48em) {
@@ -130,11 +140,11 @@
     // OBEN OPORTUNIDAD - ¿Que es lo que puedes conseguir? - SECTION
     &__recompensa {
         background-color: $c-secondary-2;
-        padding: 6.2rem;
+        padding: 6.2rem 0;
 
         // 400px
         @include for-size(25em) {
-            padding: 3rem .5rem;
+            padding: 3rem 0;
         }
 
         &-summaryContent {
@@ -147,10 +157,10 @@
 
     // OBEN OPORTUNIDAD - Únete a nosotros en la construcción de una comunidad próspera - SECTION
     &__comunidad {
-        padding: 6.2rem;
+        padding: 6.2rem 0;
 
         @include for-size('tablet-medium-up') {
-            padding: 4rem 2rem;
+            padding: 4rem 0;
         }
 
         &-contentList {

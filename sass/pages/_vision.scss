@@ -46,10 +46,10 @@
     // OBEN VISION - La visión de OBEN - SECTION
     &__visionOben {
         background-image: url(../img/flechas-vision.jpg);
-        padding: 8rem;
+        padding: 8rem 0;
 
         @include for-size('tablet-medium-up') {
-            padding: 4rem 2rem;
+            padding: 4rem 0;
         }
 
         &-bg {
@@ -80,7 +80,6 @@
         }
 
         &-letterSummary {
-            padding: 1.5rem 2rem;
             text-align: center;
         }
     }

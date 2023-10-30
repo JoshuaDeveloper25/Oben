@@ -61,10 +61,10 @@
         background-image: url(../img/flechas-viaje.jpg);
         background-position: center center;
         background-size: cover;
-        padding: 8rem;
+        padding: 8rem 0;
 
         @include for-size('tablet-medium-up') {
-            padding: 4rem 2rem;
+            padding: 4rem 0;
         }
 
         &-bg {

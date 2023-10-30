@@ -67,10 +67,10 @@
     // OBEN NEWSLETTER - ¿Qué es lo que encontrarás en nuestra newsletter? - SECTION
     &__curiosidad {
         background: $c-primary-lighter;
-        padding: 6.2rem;
+        padding: 6.2rem 0;
 
         @include for-size('tablet-medium-up') {
-            padding: 4rem 2rem;
+            padding: 4rem 0;
         }
 
         &-contentList {

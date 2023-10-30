@@ -103,10 +103,10 @@
     // OBEN TIENDA - Envíos gratis - SECTION
     &__envio {
         background: url(../img/flechas-envios.jpg);
-        padding: 6.2rem;
+        padding: 6.2rem 0;
 
         @include for-size('tablet-medium-up') {
-            padding: 3rem 1rem;
+            padding: 3rem 0;
         }
 
         &-contentList {
