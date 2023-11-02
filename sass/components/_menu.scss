@@ -83,4 +83,15 @@
         text-decoration: none;
         color: $c-text-primary;
     }
+
+    &-buttonDropDown {
+        padding: .3rem 1.5rem;
+        border: none;
+    }
+
+    &-buttonDropDownLinks {
+        text-decoration: none;
+        color: $c-secondary;
+        padding: 0 .9rem;
+    }
 }

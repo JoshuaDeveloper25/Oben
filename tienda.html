@@ -22,102 +22,245 @@
 
 <body>
     <!-- OBEN SUBMENU SECTION -->
-    <section class="oben__submenu">
-        <div class="container-large">
-            <div class="oben__submenu-flex">
+ <section class="oben__submenu">
+      <div class="container-large">
+        <div class="oben__submenu-flex">
+          <!-- COLUMN -->
+          <ul class="oben__submenu-iconsList mb-0 ps-0">
+            <li class="oben__submenu-iconList">
+              <a href="#"
+                ><img
+                  class="oben__submenu-iconsImg"
+                  src="img/phone-icon.svg"
+                  alt="Phone Icon"
+              /></a>
+            </li>
+            <li class="oben__submenu-iconList">
+              <a href="#"
+                ><img
+                  class="oben__submenu-iconsImg"
+                  src="img/mail-icon.svg"
+                  alt="Mail Icon"
+              /></a>
+            </li>
+            <li class="oben__submenu-iconList">
+              <a
+                href="https://instagram.com/obennutrition?igshid=NzZlODBkYWE4Ng=="
+                target="_blank"
+              >
+                <img
+                  class="oben__submenu-iconsImg"
+                  src="img/instagram-icon.svg"
+                  alt="Instagram Icon"
+              /></a>
+            </li>
+            <li class="oben__submenu-iconList">
+              <a href="#"
+                ><img
+                  class="oben__submenu-iconsImg"
+                  src="img/facebook-icon.svg"
+                  alt="Facebook Icon"
+              /></a>
+            </li>
+          </ul>
 
-                <!-- COLUMN ONE -->
-                <div>
-                    <p class="d-flex align-items-center fs-small gap-2 mb-0">
-                        <span><img src="img/marker-icon.svg" alt="Marker Icon"></span>
-                        <span>Dirección</span>
-                    </p>
-                </div>
-
-                <!-- COLUMN TWO -->
-                <ul class="oben__submenu-iconsList mb-0 ps-0">
-                    <li class="oben__submenu-iconList"><a href="#"><img class="oben__submenu-iconsImg"
-                                src="img/phone-icon.svg" alt="Phone Icon"></a></li>
-                    <li class="oben__submenu-iconList"><a href="#"><img class="oben__submenu-iconsImg"
-                                src="img/mail-icon.svg" alt="Mail Icon"></a></li>
-                    <li class="oben__submenu-iconList"><a href="#"><img class="oben__submenu-iconsImg"
-                                src="img/instagram-icon.svg" alt="Instagram Icon"></a></li>
-                    <li class="oben__submenu-iconList"><a href="#"><img class="oben__submenu-iconsImg"
-                                src="img/facebook-icon.svg" alt="Facebook Icon"></a></li>
-                </ul>
-            </div>
+          <!-- COLUMN -->
+          <div class="d-flex gap-5">
+            <a href="#" class="oben__submenu-linksPage fs-small c-neutral-white"
+              >Registro</a
+            >
+            <a
+              href="oficina-virtual.html"
+              class="oben__submenu-linksPage fs-small c-neutral-white"
+              >Oficina Virtual</a
+            >
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- OBEN LOGO AND OBEN MENU SECTION -->
     <section class="oben__menu">
-        <div class="container-large">
-            <div class="oben__menu-flex">
-                <!-- MENU LOGO -->
-                <div class="oben__menu-logo">
-                    <a href="index.html">
-                        <img class="oben__menu-logoImg" src="img/live-oben-logo.svg" alt="Live Oben Logo">
-                    </a>
+      <div class="container-large">
+        <div class="oben__menu-flex">
+          <!-- MENU LOGO -->
+          <div class="oben__menu-logo">
+            <a href="index.html">
+              <img
+                class="oben__menu-logoImg"
+                src="img/live-oben-logo.svg"
+                alt="Live Oben Logo"
+              />
+            </a>
+          </div>
+
+          <!-- MENU LINKS -->
+          <div class="oben__menu-linksListNormalMedia">
+            <ul class="oben__menu-linksList">
+              <li>
+                <a
+                  class="oben__menu-links fs-medium fw-300 active-page"
+                  href="index.html"
+                  >Inicio</a
+                >
+              </li>
+
+              <div class="dropdown">
+                <button
+                  class="oben__menu-buttonDropDown fs-normal fw-300 dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Live Oben
+                </button>
+                <ul class="dropdown-menu">
+                  <li class="pb-3">
+                    <a
+                      class="oben__menu-buttonDropDownLinks fs-small fw-300"
+                      href="vision.html"
+                      >Visión</a
+                    >
+                  </li>
+                  <li class="pb-3">
+                    <a
+                      class="oben__menu-buttonDropDownLinks fs-small fw-300"
+                      href="sobre-nosotros.html"
+                      >Sobre Nosotros</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="oben__menu-buttonDropDownLinks fs-small fw-300"
+                      href="oportunidad.html"
+                      >Oportunidad</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <li>
+                <a
+                  class="oben__menu-links fs-medium fw-300"
+                  href="http://liveoben.com/tienda"
+                  target="_blank"
+                  >Oben Nutrition</a
+                >
+              </li>
+              <li>
+                <a
+                  class="oben__menu-links fs-medium fw-300"
+                  href="newsletter.html"
+                  >Newsletter</a
+                >
+              </li>
+              <!-- <li><a class="oben__menu-links fs-medium fw-300" href="blog.html">Blog</a></li> -->
+              <li>
+                <a
+                  class="oben__menu-links fs-medium fw-300"
+                  href="contactanos.html"
+                  >Contáctanos</a
+                >
+              </li>
+              <!-- <li><a class="oben__menu-links fs-medium fw-300" href="oficina-virtual.html">Oficina
+                                virtual</a></li> -->
+            </ul>
+          </div>
+
+          <!-- HAMBURGUER MENU LINKS -->
+          <div class="oben__menu-linksListMediumMedia">
+            <!-- HAMBURGER ICON -->
+            <nav class="navbar">
+              <div class="container-fluid gx-0">
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarToggleExternalContent"
+                  aria-controls="navbarToggleExternalContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </div>
+            </nav>
+
+            <!-- CODE TO DISPLAY -->
+            <div class="collapse" id="navbarToggleExternalContent">
+              <ul class="oben__menu-linksList">
+                <li>
+                  <a
+                    class="oben__menu-links fs-medium fw-300 active-page"
+                    href="index.html"
+                    >Inicio</a
+                  >
+                </li>
+
+                <div class="dropdown">
+                  <button
+                    class="oben__menu-buttonDropDown fs-normal fw-300 dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Live Oben
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li class="pb-3">
+                      <a
+                        class="oben__menu-buttonDropDownLinks fs-small fw-300"
+                        href="vision.html"
+                        >Visión</a
+                      >
+                    </li>
+                    <li class="pb-3">
+                      <a
+                        class="oben__menu-buttonDropDownLinks fs-small fw-300"
+                        href="sobre-nosotros.html"
+                        >Sobre Nosotros</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="oben__menu-buttonDropDownLinks fs-small fw-300"
+                        href="oportunidad.html"
+                        >Oportunidad</a
+                      >
+                    </li>
+                  </ul>
                 </div>
 
-                <!-- MENU LINKS -->
-                <div class="oben__menu-linksListNormalMedia">
-                    <ul class="oben__menu-linksList">
-                        <li><a class="oben__menu-links fs-medium fw-300" href="index.html">Inicio</a>
-                        </li>
-                        <li><a class="oben__menu-links fs-medium fw-300" href="vision.html">Visión</a></li>
-                        <li><a class="oben__menu-links fs-medium fw-300" href="sobre-nosotros.html">Sobre
-                                Nosotros</a>
-                        </li>
-                        <li><a class="oben__menu-links fs-medium fw-300" href="oportunidad.html">Oportunidad</a>
-                        </li>
-                        <li><a class="oben__menu-links fs-medium fw-300 " href="newsletter.html">Newsletter</a>
-                        </li>
-                        <li><a class="oben__menu-links fs-medium fw-300" href="blog.html">Blog</a></li>
-                        <li><a class="oben__menu-links fs-medium fw-300" href="contactanos.html">Contáctanos</a>
-                        </li>
-                        <li><a class="oben__menu-links fs-medium fw-300" href="oficina-virtual.html">Oficina
-                                virtual</a></li>
-                    </ul>
-                </div>
-
-                <!-- HAMBURGUER MENU LINKS -->
-                <div class="oben__menu-linksListMediumMedia">
-                    <!-- HAMBURGER ICON -->
-                    <nav class="navbar">
-                        <div class="container-fluid gx-0">
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarToggleExternalContent"
-                                aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                                aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                        </div>
-                    </nav>
-
-                    <!-- CODE TO DISPLAY -->
-                    <div class="collapse" id="navbarToggleExternalContent">
-                        <ul class="oben__menu-linksList">
-                            <li><a class="oben__menu-links fs-medium fw-300" href="index.html">Inicio</a>
-                            </li>
-                            <li><a class="oben__menu-links fs-medium fw-300" href="vision.html">Visión</a></li>
-                            <li><a class="oben__menu-links fs-medium fw-300" href="sobre-nosotros.html">Sobre
-                                    Nosotros</a>
-                            </li>
-                            <li><a class="oben__menu-links fs-medium fw-300" href="oportunidad.html">Oportunidad</a>
-                            </li>
-                            <li><a class="oben__menu-links fs-medium fw-300 " href="newsletter.html">Newsletter</a>
-                            </li>
-                            <li><a class="oben__menu-links fs-medium fw-300" href="blog.html">Blog</a></li>
-                            <li><a class="oben__menu-links fs-medium fw-300" href="contactanos.html">Contáctanos</a>
-                            </li>
-                            <li><a class="oben__menu-links fs-medium fw-300" href="oficina-virtual.html">Oficina
-                                    virtual</a></li>
-                        </ul>
-                    </div>
-                </div>
+                <li>
+                  <a
+                    class="oben__menu-links fs-medium fw-300"
+                    href="http://liveoben.com/tienda"
+                    target="_blank"
+                    >Oben Nutrition</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="oben__menu-links fs-medium fw-300"
+                    href="newsletter.html"
+                    >Newsletter</a
+                  >
+                </li>
+                <!-- <li><a class="oben__menu-links fs-medium fw-300" href="blog.html">Blog</a></li> -->
+                <li>
+                  <a
+                    class="oben__menu-links fs-medium fw-300"
+                    href="contactanos.html"
+                    >Contáctanos</a
+                  >
+                </li>
+                <!-- <li><a class="oben__menu-links fs-medium fw-300" href="oficina-virtual.html">Oficina
+                                    virtual</a></li> -->
+              </ul>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- OBEN TIENDA HEADER -->
@@ -442,7 +585,7 @@
                             <img src="img/footer-marker-icon.svg" alt="">
                         </div>
                         <div>
-                            <p class="fs-small mb-0">Dirección</p>
+                            <p class="fs-small mb-0">OBEN NUTRITION, S.L.  Polígono Industrial Can Turull, Ctra. C-1413a Km 35 Pol. Ind. Can Turull Nau 4, Carretera de Caldes de Montbui a Sentmenat, Km. 35, 08181 Sentmenat, Barcelona</p>
                         </div>
                     </div>
 
@@ -487,24 +630,22 @@
                         </li>
                         <li><a class="oben__footer-links fs-small fw-400 " href="newsletter.html">Newsletter</a>
                         </li>
-                        <li><a class="oben__footer-links fs-small fw-400" href="blog.html">Blog</a></li>
+                        <!-- <li><a class="oben__footer-links fs-small fw-400" href="blog.html">Blog</a></li> -->
                         <li><a class="oben__footer-links fs-small fw-400" href="contactanos.html">Contáctanos</a>
                         </li>
                         <li><a class="oben__footer-links fs-small fw-400" href="oficina-virtual.html">Oficina
                                 virtual</a></li>
                     </ul>
                 </article>
-
                 <article class="col-md-2 mt-5 mt-md-0">
                     <h3 class="fs-medium fw-700 pb-4">Legales</h3>
                     <ul class="oben__footer-lawList mb-0 ps-0">
-                        <li><a class="oben__footer-lawLinks fs-small" href="pdfs/OBEN-NUTRITION-POLÍTICA-DE-COOKIES.pdf"
-                                target="_blank">Política de cookies</a></li>
-                        <li><a class="oben__footer-lawLinks fs-small"
-                                href="pdfs/OBEN-NUTRITION-POLÍTICA-DE-PRIVACIDAD.pdf" target="_blank">Política de
+                        <li><a class="oben__footer-lawLinks fs-small" href="politica-de-cookies.html">Política de
+                                cookies</a></li>
+                        <li><a class="oben__footer-lawLinks fs-small" href="politica-de-privacidad.html">Política de
                                 privacidad</a></li>
-                        <li><a class="oben__footer-lawLinks fs-small" href="pdfs/OBEN-NUTRITION-AVISO-LEGAL.pdf"
-                                target="_blank">Términos y condiciones</a></li>
+                        <li><a class="oben__footer-lawLinks fs-small" href="terminos-condiciones.html">Términos y
+                                condiciones</a></li>
                     </ul>
                 </article>
             </div>

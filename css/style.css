@@ -1,4 +1,6 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap");
+
 .c-primary {
   color: #0092FF;
 }
@@ -31,6 +33,10 @@
   color: #666666;
 }
 
+.c-neutral-grey {
+  color: #9D9D9C;
+}
+
 *,
 *::after,
 *::before {
@@ -42,6 +48,7 @@
 html {
   font-size: 62.5%;
 }
+
 @media (max-width: 37.5em) {
   html {
     font-size: 56.25%;
@@ -115,10 +122,15 @@ body {
   padding: 1rem 3.5rem;
   border-bottom: 2px solid #0092FF;
 }
+
 @media (max-width: 59.125em) {
   .active-page {
     padding: 0 1rem 1rem 0;
   }
+}
+
+.active-color {
+  color: #0092FF;
 }
 
 .bottom-line {
@@ -156,6 +168,7 @@ body {
   color: #0092FF;
   padding: 0.5rem 10rem;
 }
+
 @media (max-width: 20.625em) {
   .button-primary-white {
     display: block;
@@ -176,6 +189,7 @@ body {
 .border-right-white {
   border-right: 0.1rem solid #FFFFFF;
 }
+
 @media (max-width: 48em) {
   .border-right-white {
     border-bottom: 0.1rem solid #FFFFFF;
@@ -286,13 +300,17 @@ body {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
-.oben__footer-linksList, .oben__footer-lawList {
+
+.oben__footer-linksList,
+.oben__footer-lawList {
   display: flex;
   flex-direction: column;
   list-style: none;
   row-gap: 2rem;
 }
-.oben__footer-links, .oben__footer-lawLinks {
+
+.oben__footer-links,
+.oben__footer-lawLinks {
   text-decoration: none;
   color: #FFFFFF;
 }
@@ -300,11 +318,13 @@ body {
 .oben__headingTitleStart {
   text-align: start;
 }
+
 .oben__headingTitleStart-subheading {
   text-transform: uppercase;
   color: #212121;
   font-weight: 300;
 }
+
 @media (max-width: 31.25em) {
   .oben__headingTitleStart-heading {
     font-size: 3rem;
@@ -314,11 +334,13 @@ body {
 .oben__headingTitleCenter {
   text-align: center;
 }
+
 .oben__headingTitleCenter-subheading {
   text-transform: uppercase;
   color: #212121;
   font-weight: 300;
 }
+
 @media (max-width: 31.25em) {
   .oben__headingTitleCenter-heading {
     font-size: 3rem;
@@ -328,12 +350,14 @@ body {
 .oben__menu {
   padding: 2rem 0;
 }
+
 .oben__menu-flex {
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 2rem;
 }
+
 @media (max-width: 59.125em) {
   .oben__menu-flex {
     flex-direction: row-reverse;
@@ -341,56 +365,78 @@ body {
     align-items: start;
   }
 }
+
 .oben__menu-logo {
   max-width: 28.5rem;
 }
+
 @media (max-width: 59.125em) {
   .oben__menu-logo {
     max-width: 23rem;
   }
 }
+
 .oben__menu-logoImg {
   width: 100%;
   height: 100%;
 }
+
 @media (max-width: 59.125em) {
   .oben__menu-linksListNormalMedia {
     display: none;
   }
 }
+
 .oben__menu-linksListMediumMedia {
   display: none;
 }
+
 @media (max-width: 59.125em) {
   .oben__menu-linksListMediumMedia {
     display: block;
   }
 }
+
 .oben__menu-linksList {
   display: flex;
   list-style: none;
   column-gap: 4.5rem;
   padding: 2rem 0;
 }
+
 @media (max-width: 68.125em) {
   .oben__menu-linksList {
     column-gap: 2.5rem;
   }
 }
+
 @media (max-width: 59.125em) {
   .oben__menu-linksList {
     flex-direction: column;
     row-gap: 3.5rem;
   }
 }
+
 .oben__menu-links {
   text-decoration: none;
   color: #212121;
 }
 
+.oben__menu-buttonDropDown {
+  padding: 0.3rem 1.5rem;
+  border: none;
+}
+
+.oben__menu-buttonDropDownLinks {
+  text-decoration: none;
+  color: #3B444D;
+  padding: 0 0.9rem;
+}
+
 .oben__novedades {
   background-color: #FAFAFA;
 }
+
 .oben__novedades-flex {
   display: flex;
   justify-content: space-between;
@@ -398,21 +444,26 @@ body {
   padding: 3rem 0;
   column-gap: 1rem;
 }
+
 .oben__novedades-p {
   flex-basis: 40%;
 }
+
 .oben__novedades-input {
   display: inline-block;
   flex-basis: 40%;
   width: 100%;
 }
+
 .oben__novedades-inputEmail {
   border: none;
   width: 100%;
 }
+
 .oben__novedades-inputEmail:focus {
   outline: none;
 }
+
 .oben__novedades-submit {
   flex-basis: 15%;
 }
@@ -420,6 +471,7 @@ body {
 .oben__subfooter {
   background-color: #0092FF;
 }
+
 .oben__subfooter-flex {
   display: flex;
   justify-content: space-between;
@@ -430,34 +482,44 @@ body {
   background: #3B444D;
   color: #FFFFFF;
 }
+
 .oben__submenu-flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-@media (max-width: 21.875em) {
+
+@media (max-width: 26.25em) {
   .oben__submenu-flex {
     flex-direction: column;
     padding: 1rem 0;
     row-gap: 2rem;
   }
 }
+
 .oben__submenu-iconsList {
   display: flex;
   gap: 1.5rem;
   list-style: none;
 }
+
 @media (max-width: 11.875em) {
   .oben__submenu-iconsList {
     flex-direction: column;
   }
 }
+
 .oben__submenu-iconList {
   background: rgba(255, 255, 255, 0.1);
 }
+
 .oben__submenu-iconsImg {
   height: 4rem;
   padding: 1rem;
+}
+
+.oben__submenu-linksPage {
+  text-decoration: none;
 }
 
 .oben-blog__header {
@@ -466,16 +528,20 @@ body {
   background-size: cover;
   min-height: 50rem;
 }
+
 .oben-blog__header-summary {
   padding: 4rem 1rem;
 }
+
 .oben-blog__header-title {
   color: #FFFFFF;
   text-align: center;
 }
+
 .oben-blog__posts {
   background: #FAFAFA;
 }
+
 .oben-blog__posts-input {
   display: inline-block;
   border-radius: 0.25rem;
@@ -485,14 +551,17 @@ body {
   font-size: 1.6rem;
   width: 15.5rem;
 }
+
 .oben-blog__posts-input:focus {
   outline: none;
 }
+
 .oben-blog__posts-icon {
   margin-left: -3.4rem;
   margin-bottom: 0.4rem;
   height: 1.6rem;
 }
+
 .oben-blog__posts-iconSearch {
   position: absolute;
   top: 50%;
@@ -500,6 +569,7 @@ body {
   transform: translate(-50%, -50%);
   height: 1.7rem;
 }
+
 .oben-blog__posts-inputSearch {
   display: inline-block;
   border-radius: 0.25rem;
@@ -509,42 +579,52 @@ body {
   font-size: 1.6rem;
   width: 25rem;
 }
+
 .oben-blog__posts-inputSearch:focus {
   outline: none;
 }
+
 @media (max-width: 48em) {
   .oben-blog__posts-inputSearch {
     width: 100%;
   }
 }
+
 .oben-blog__posts-image {
   max-width: 40rem;
   margin: 0 auto;
 }
+
 .oben-blog__posts-img {
   width: 100%;
   height: 100%;
 }
+
 .oben-blog__posts-content {
   box-shadow: 0px 0px 20px -2px rgba(59, 68, 77, 0.2);
   background: #FFFFFF;
   padding: 1.7rem;
 }
+
 .oben-blog__posts-contentHeading {
   font-size: 2.4rem;
 }
+
 .oben-blog__consejosExtras {
   background: #E2F1FF;
   padding: 6.2rem 0;
 }
+
 @media (max-width: 62em) {
   .oben-blog__consejosExtras {
     padding: 4rem 0;
   }
 }
+
 .oben-blog__consejosExtras-boxImage {
   max-width: 18rem;
 }
+
 .oben-blog__consejosExtras-boxImg {
   width: 100%;
   height: 100%;
@@ -556,46 +636,112 @@ body {
   background-size: cover;
   min-height: 50rem;
 }
+
 .oben-contactanos__header-summary {
   padding: 4rem 1rem;
 }
+
 .oben-contactanos__header-title {
   color: #FFFFFF;
   text-align: center;
 }
+
 .oben-contactanos__encantado-logContent {
   background: #E2F1FF;
   padding: 3.1rem;
   line-height: 1.8;
 }
+
 .oben-contactanos__encantado-bg {
   box-shadow: 2.1rem -1.3rem 6.5rem 0 rgba(0, 0, 0, 0.1);
   background: #FFFFFF;
 }
+
 .oben-contactanos__encantado-input {
   margin: 2rem 0;
 }
+
 .oben-contactanos__encantado-inputContent {
   padding: 3.1rem;
 }
+
 .oben-contactanos__encantado-inputInfo {
   border: none;
   width: 100%;
   color: #9E9E9E;
 }
+
 .oben-contactanos__encantado-inputInfo:focus {
   outline: none;
   color: #000000;
 }
+
 .oben-contactanos__encantado-inputTextarea {
   height: 15rem;
 }
+
 .oben-contactanos__alternativas-box {
   background: #145FCA;
   padding: 1.5rem 2.5rem;
 }
+
 .oben-contactanos__alternativas-boxTitle {
   font-size: 3.2rem;
+}
+
+.oben-home {
+  /*// OBEN HOME - Descubre las últimas novedades de nuestro blog - SECTION
+  &__novedades-blog {
+      background: $c-neutral-50-white;
+
+      &-image {
+          max-width: 40rem;
+          margin: 0 auto;
+      }
+
+      &-img {
+          width: 100%;
+          height: 100%;
+      }
+
+      &-content {
+          box-shadow: 0px 0px 20px -2px rgba(59, 68, 77, 0.20);
+          background: $c-neutral-white;
+          padding: 1.7rem;
+      }
+
+      &-contentHeading {
+          font-size: 2.4rem;
+      }
+  }*/
+  /*// OBEN HOME - Historias de transformación con OBEN - SECTION
+  &__historias {
+      background-color: $c-neutral-50-white;
+
+      &-summaryContent {
+          max-width: 70rem;
+          margin: 2.5rem auto 0 auto;
+          color: $c-text-primary;
+      }
+
+      // CAROUSEL CONTAINER
+      &-reviews {
+          padding: 0 5rem;
+
+          // 900px
+          @include for-size(56.25em) {
+              padding: 0 0;
+          }
+      }
+
+      // CAROUSEL CARD
+      &-review {
+          border-radius: 0.125rem;
+          border: 1px solid $c-primary;
+          background: $c-neutral-white;
+          padding: 1.8rem;
+      }
+  }*/
 }
 
 .oben-home__header {
@@ -604,82 +750,78 @@ body {
   background-size: cover;
   min-height: 50rem;
 }
+
 .oben-home__header-summary {
   padding: 4rem 1rem;
 }
+
 .oben-home__header-title {
   color: #FFFFFF;
   text-align: center;
 }
+
 .oben-home__puerta {
   background: #FAFAFA;
 }
+
 .oben-home__puerta-content {
   line-height: 1.6;
 }
+
 .oben-home__puerta-image {
   max-width: 48rem;
 }
+
 .oben-home__puerta-img {
   width: 100%;
   height: 100%;
 }
+
 .oben-home__productos-image {
   max-width: 37rem;
   margin: 0 auto;
 }
+
 .oben-home__productos-img {
   width: 100%;
   height: 100%;
 }
+
 .oben-home__productos-content {
   background: #3B444D;
   color: #FFFFFF;
   padding: 1.7rem;
 }
+
 .oben-home__productos-contentHeading {
   font-size: 3.2rem;
 }
-.oben-home__novedades-blog {
-  background: #FAFAFA;
-}
-.oben-home__novedades-blog-image {
-  max-width: 40rem;
-  margin: 0 auto;
-}
-.oben-home__novedades-blog-img {
-  width: 100%;
-  height: 100%;
-}
-.oben-home__novedades-blog-content {
-  box-shadow: 0px 0px 20px -2px rgba(59, 68, 77, 0.2);
-  background: #FFFFFF;
-  padding: 1.7rem;
-}
-.oben-home__novedades-blog-contentHeading {
-  font-size: 2.4rem;
-}
+
 .oben-home__suscribeteNewsletter {
   background-image: url(../img/flechas-newsletter.jpg);
   padding: 8rem;
 }
+
 @media (max-width: 43.75em) {
   .oben-home__suscribeteNewsletter {
     padding: 4rem 2rem;
   }
 }
+
 .oben-home__suscribeteNewsletter-bg {
   background-color: #FFFFFF;
   border-radius: 0.5rem;
   box-shadow: 0.4rem 0.4rem 1.6rem 0 rgba(0, 0, 0, 0.1);
   padding: 5rem 2.5rem;
 }
+
 .oben-home__suscribeteNewsletter-suscription {
   display: flex;
   justify-content: space-between;
   align-items: end;
   column-gap: 2rem;
 }
+
 @media (max-width: 30.3125em) {
   .oben-home__suscribeteNewsletter-suscription {
     flex-direction: column;
@@ -687,70 +829,60 @@ body {
     row-gap: 1.8rem;
   }
 }
+
 .oben-home__suscribeteNewsletter-input {
   flex-basis: 75%;
 }
+
 @media (max-width: 30.3125em) {
   .oben-home__suscribeteNewsletter-input {
     display: inline-block;
     width: 100%;
   }
 }
+
 .oben-home__suscribeteNewsletter-inputEmail {
   border: none;
   width: 100%;
 }
+
 .oben-home__suscribeteNewsletter-inputEmail:focus {
   outline: none;
 }
+
 .oben-home__suscribeteNewsletter-submit {
   flex-basis: 20%;
 }
+
 .oben-home__redesSociales-content {
   line-height: 1.6;
 }
+
 @media (max-width: 27.8125em) {
   .oben-home__redesSociales-grid {
     flex-direction: column;
     align-items: center;
   }
 }
+
 .oben-home__redesSociales-box {
   max-width: 17rem;
 }
+
 .oben-home__redesSociales-img {
   width: 100%;
   height: 100%;
 }
-.oben-home__historias {
-  background-color: #FAFAFA;
-}
-.oben-home__historias-summaryContent {
-  max-width: 70rem;
-  margin: 2.5rem auto 0 auto;
-  color: #212121;
-}
-.oben-home__historias-reviews {
-  padding: 0 5rem;
-}
-@media (max-width: 56.25em) {
-  .oben-home__historias-reviews {
-    padding: 0 0;
-  }
-}
-.oben-home__historias-review {
-  border-radius: 0.125rem;
-  border: 1px solid #0092FF;
-  background: #FFFFFF;
-  padding: 1.8rem;
-}
+
 .oben-home__oportunidad-content {
   line-height: 1.6;
   padding-right: 5rem;
 }
+
 .oben-home__oportunidad-image {
   max-width: 48rem;
 }
+
 .oben-home__oportunidad-img {
   width: 100%;
   height: 100%;
@@ -825,39 +957,49 @@ body {
   background-size: cover;
   min-height: 50rem;
 }
+
 .oben-newsletter__header-summary {
   padding: 4rem 1rem;
 }
+
 .oben-newsletter__header-title {
   color: #FFFFFF;
   text-align: center;
 }
+
 .oben-newsletter__consejos {
   background: url(../img/newsletter-bg-grey-arrows.jpg);
   background-position: center center;
   background-size: cover;
 }
+
 .oben-newsletter__consejos-logContent {
   background: #0092FF;
   padding: 3.1rem;
 }
+
 .oben-newsletter__consejos-bg {
   background: #FFFFFF;
   box-shadow: 2.1rem -1.3rem 6.5rem 0 rgba(0, 0, 0, 0.1);
 }
+
 .oben-newsletter__consejos-input {
   margin: 3.8rem 0;
 }
+
 .oben-newsletter__consejos-inputContent {
   padding: 3.1rem;
 }
+
 .oben-newsletter__consejos-inputEmail {
   border: none;
   width: 100%;
 }
+
 .oben-newsletter__consejos-inputEmail:focus {
   outline: none;
 }
+
 .oben-newsletter__consejos-note {
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
   background: #FFFFFF;
@@ -865,21 +1007,26 @@ body {
   text-align: center;
   padding: 1.5rem;
 }
+
 .oben-newsletter__curiosidad {
   background: #E2F1FF;
   padding: 6.2rem 0;
 }
+
 @media (max-width: 43.75em) {
   .oben-newsletter__curiosidad {
     padding: 4rem 0;
   }
 }
+
 .oben-newsletter__curiosidad-contentList {
   background: #FFFFFF;
 }
+
 .oben-newsletter__curiosidad-image {
   max-width: 100%;
 }
+
 .oben-newsletter__curiosidad-img {
   width: 100%;
   height: 100%;
@@ -891,18 +1038,22 @@ body {
   background-size: cover;
   min-height: 50rem;
 }
+
 .oben-oportunidad__header-summary {
   padding: 4rem 1rem;
 }
+
 .oben-oportunidad__header-title {
   color: #FFFFFF;
   text-align: center;
 }
+
 .oben-oportunidad__duda-summaryContent {
   max-width: 75rem;
   margin: 3.5rem auto 0 auto;
   line-height: 1.7;
 }
+
 .oben-oportunidad__guia-box {
   position: absolute;
   width: 38rem;
@@ -911,51 +1062,64 @@ body {
   background: #FAFAFA;
   box-shadow: 0.4rem 0.4rem 1.8rem 0.6rem rgba(0, 0, 0, 0.05);
 }
+
 @media (max-width: 48em) {
   .oben-oportunidad__guia-box {
     position: unset;
     max-width: 100%;
   }
 }
+
 .oben-oportunidad__guia-title {
   font-size: 2.3rem;
 }
+
 .oben-oportunidad__guia-subtitle {
   font-size: 2.3rem;
 }
+
 .oben-oportunidad__guia-image {
   max-width: 75rem;
 }
+
 .oben-oportunidad__guia-img {
   width: 100%;
   height: 100%;
 }
+
 .oben-oportunidad__facetas {
   padding: 6rem 0;
 }
+
 @media (max-width: 48em) {
   .oben-oportunidad__facetas {
     padding: 1rem 0;
   }
 }
+
 .oben-oportunidad__facetas-content {
   line-height: 1.6;
 }
+
 .oben-oportunidad__facetas-image {
   max-width: 48rem;
 }
+
 .oben-oportunidad__facetas-img {
   width: 100%;
   height: 100%;
 }
+
 .oben-oportunidad__version {
   margin-bottom: 15rem;
 }
+
 @media (max-width: 48em) {
   .oben-oportunidad__version {
     margin-bottom: 4rem;
   }
 }
+
 .oben-oportunidad__version-box {
   position: absolute;
   width: 38rem;
@@ -964,78 +1128,95 @@ body {
   background: #FAFAFA;
   box-shadow: 0.4rem 0.4rem 1.8rem 0.6rem rgba(0, 0, 0, 0.05);
 }
+
 @media (max-width: 48em) {
   .oben-oportunidad__version-box {
     position: unset;
     max-width: 100%;
   }
 }
+
 .oben-oportunidad__version-title {
   font-size: 2.3rem;
 }
+
 .oben-oportunidad__version-subtitle {
   font-size: 2.3rem;
 }
+
 .oben-oportunidad__version-image {
   max-width: 75rem;
 }
+
 .oben-oportunidad__version-img {
   width: 100%;
   height: 100%;
 }
+
 .oben-oportunidad__recompensa {
   background-color: #4A5762;
   padding: 6.2rem 0;
 }
+
 @media (max-width: 25em) {
   .oben-oportunidad__recompensa {
     padding: 3rem 0;
   }
 }
+
 .oben-oportunidad__recompensa-summaryContent {
   max-width: 75rem;
   margin: 3.5rem auto 0 auto;
   line-height: 1.7;
   color: #FFFFFF;
 }
+
 .oben-oportunidad__comunidad {
   padding: 6.2rem 0;
 }
+
 @media (max-width: 43.75em) {
   .oben-oportunidad__comunidad {
     padding: 4rem 0;
   }
 }
+
 .oben-oportunidad__comunidad-contentList {
   box-shadow: 0.4rem 0.4rem 1.8rem 0.6rem rgba(0, 0, 0, 0.1);
   background: #FFFFFF;
   line-height: 1.7;
 }
+
 .oben-oportunidad__comunidad-image {
   max-width: 100%;
   box-shadow: 0.4rem 0.4rem 1.8rem 0.6rem rgba(0, 0, 0, 0.1);
 }
+
 .oben-oportunidad__comunidad-img {
   width: 100%;
   height: 100%;
 }
+
 .oben-oportunidad__pasos {
   background-image: url(../img/flechas-pasos.jpg);
   background-position: center center;
   background-size: cover;
   padding: 8rem;
 }
+
 @media (max-width: 43.75em) {
   .oben-oportunidad__pasos {
     padding: 3rem 0;
   }
 }
+
 .oben-oportunidad__pasos-bg {
   background-color: #FFFFFF;
   border-radius: 0.5rem;
   box-shadow: 0.4rem 0.4rem 1.6rem 0 rgba(0, 0, 0, 0.1);
   padding: 3rem 2.5rem;
 }
+
 .oben-oportunidad__pasos-content {
   padding: 1.5rem 1rem;
   background: #E2F1FF;
@@ -1049,74 +1230,91 @@ body {
   background-size: cover;
   min-height: 50rem;
 }
+
 .oben-nosotros__header-summary {
   padding: 4rem 1rem;
 }
+
 .oben-nosotros__header-title {
   color: #FFFFFF;
   text-align: center;
 }
+
 .oben-nosotros__equipo-summaryContent {
   max-width: 75rem;
   margin: 3.5rem auto 0 auto;
   line-height: 1.7;
 }
+
 .oben-nosotros__equipo-card {
   max-width: 35rem;
 }
+
 .oben-nosotros__equipo-image {
   max-width: 100%;
 }
+
 .oben-nosotros__equipo-img {
   width: 100%;
   height: 100%;
 }
+
 .oben-nosotros__equipo-content {
   background-color: #3B444D;
   color: #FFFFFF;
   padding: 1.5rem;
 }
+
 .oben-nosotros__equipo-nombre {
   font-size: 2.4rem;
 }
+
 .oben-nosotros__viaje {
   background-image: url(../img/flechas-viaje.jpg);
   background-position: center center;
   background-size: cover;
   padding: 8rem 0;
 }
+
 @media (max-width: 43.75em) {
   .oben-nosotros__viaje {
     padding: 4rem 0;
   }
 }
+
 .oben-nosotros__viaje-bg {
   background-color: #FFFFFF;
   border-radius: 0.5rem;
   box-shadow: 0.4rem 0.4rem 1.6rem 0 rgba(0, 0, 0, 0.1);
   padding: 3rem 2.5rem;
 }
+
 .oben-nosotros__viaje-history {
   text-align: center;
   max-width: 90rem;
   line-height: 1.8;
   margin: 0 auto;
 }
+
 .oben-nosotros__filosofia-box {
   background-position: center top;
   background-size: cover;
   color: #FFFFFF;
   line-height: 1.8;
 }
+
 .oben-nosotros__filosofia-boxImage1 {
   background-image: url(../img/filosofia.jpg);
 }
+
 .oben-nosotros__filosofia-boxImage2 {
   background-image: url(../img/futuro.jpg);
 }
+
 .oben-nosotros__filosofia-boxTitle {
   font-size: 3.2rem;
 }
+
 .oben-nosotros__filosofia-boxText {
   max-width: 45rem;
 }
@@ -1127,88 +1325,111 @@ body {
   background-size: cover;
   min-height: 50rem;
 }
+
 .oben-tienda__header-summary {
   padding: 4rem 1rem;
 }
+
 .oben-tienda__header-title {
   color: #FFFFFF;
   text-align: center;
 }
+
 @media (max-width: 62em) {
   .oben-tienda__productosTienda-card {
     max-width: 40rem;
   }
 }
+
 .oben-tienda__productosTienda-image {
   max-width: 40rem;
   margin: 0 auto;
 }
+
 .oben-tienda__productosTienda-img {
   width: 100%;
   height: 100%;
 }
+
 .oben-tienda__productosTienda-content {
   background: #3B444D;
   color: #FFFFFF;
   padding: 1.7rem;
 }
-.oben-tienda__productosTienda-contentHeading, .oben-tienda__productosTienda-contentPrice {
+
+.oben-tienda__productosTienda-contentHeading,
+.oben-tienda__productosTienda-contentPrice {
   font-size: 3.2rem;
 }
+
 .oben-tienda__porque-leftboxContent {
   box-shadow: 0 0 2rem -0.2rem rgba(33, 33, 33, 0.2);
   padding: 3.1rem;
 }
+
 .oben-tienda__porque-leftboxContent {
   background: #E2F1FF;
 }
+
 .oben-tienda__porque-leftContentSubtitle {
   font-size: 3.2rem;
 }
+
 .oben-tienda__porque-image {
   width: 100%;
 }
+
 @media (max-width: 62em) {
   .oben-tienda__porque-image {
     max-width: 25rem;
   }
 }
+
 .oben-tienda__porque-img {
   width: 100%;
   height: 100%;
 }
+
 .oben-tienda__porque-rightboxContent {
   box-shadow: 0 0 2rem -0.2rem rgba(33, 33, 33, 0.2);
   background: #FAFAFA;
   padding: 3.1rem;
 }
+
 .oben-tienda__porque-rightContent {
   box-shadow: 0 0 2rem -0.2rem rgba(33, 33, 33, 0.2);
   background: #FAFAFA;
   padding: 1.5rem;
 }
+
 .oben-tienda__envio {
   background: url(../img/flechas-envios.jpg);
   padding: 6.2rem 0;
 }
+
 @media (max-width: 43.75em) {
   .oben-tienda__envio {
     padding: 3rem 0;
   }
 }
+
 .oben-tienda__envio-contentList {
   background: #FFFFFF;
 }
+
 .oben-tienda__envio-contentListP {
   font-size: 2.1rem;
 }
+
 .oben-tienda__envio-image {
   max-width: 100%;
 }
+
 .oben-tienda__envio-img {
   width: 100%;
   height: 100%;
 }
+
 .oben-tienda__duda-summaryContent {
   max-width: 75rem;
   margin: 3.5rem auto 0 auto;
@@ -1221,41 +1442,51 @@ body {
   background-size: cover;
   min-height: 50rem;
 }
+
 .oben-vision__header-summary {
   padding: 4rem 1rem;
 }
+
 .oben-vision__header-title {
   color: #FFFFFF;
   text-align: center;
 }
+
 .oben-vision__armonia {
   background: #FAFAFA;
 }
+
 .oben-vision__armonia-content {
   line-height: 1.6;
 }
+
 .oben-vision__armonia-image {
   max-width: 48rem;
 }
+
 .oben-vision__armonia-img {
   width: 100%;
   height: 100%;
 }
+
 .oben-vision__visionOben {
   background-image: url(../img/flechas-vision.jpg);
   padding: 8rem 0;
 }
+
 @media (max-width: 43.75em) {
   .oben-vision__visionOben {
     padding: 4rem 0;
   }
 }
+
 .oben-vision__visionOben-bg {
   background-color: #FFFFFF;
   border-radius: 0.5rem;
   box-shadow: 0.4rem 0.4rem 1.6rem 0 rgba(0, 0, 0, 0.1);
   padding: 5rem 2.5rem;
 }
+
 .oben-vision__visionOben-letter {
   position: relative;
   max-width: 80rem;
@@ -1263,41 +1494,51 @@ body {
   isolation: isolate;
   padding: 2rem;
 }
+
 .oben-vision__visionOben-letterBg {
   position: absolute;
   z-index: -1;
   inset: 0;
   background: rgba(0, 146, 255, 0.1);
 }
+
 .oben-vision__visionOben-letterBorders {
   height: 100%;
   width: 100%;
 }
+
 .oben-vision__visionOben-letterSummary {
   text-align: center;
 }
+
 .oben-vision__cumplimiento {
   background-color: #FAFAFA;
 }
+
 .oben-vision__cumplimiento-summaryContent {
   margin: 3.5rem auto 0 auto;
   color: #212121;
   line-height: 1.7;
 }
+
 .oben-vision__impacto-content {
   line-height: 1.6;
   padding-right: 5rem;
 }
+
 .oben-vision__impacto-image {
   max-width: 48rem;
 }
+
 .oben-vision__impacto-img {
   width: 100%;
   height: 100%;
 }
+
 .oben-vision__parte {
   background-color: #4A5762;
 }
+
 .oben-vision__parte-summaryContent {
   max-width: 75rem;
   margin: 3.5rem auto 0 auto;
